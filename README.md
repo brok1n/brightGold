@@ -1,0 +1,2 @@
+# brightGold
+亮金
