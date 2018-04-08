@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.brok1n.java.bkquery.mapper.UserMapper">
+
+    <!--<resultMap id="userList" type="user" >-->
+        <!--<id column="id" property="id" />-->
+        <!--<result column="username" property="username" />-->
+        <!--<result column="sex" property="sex" />-->
+    <!--</resultMap>-->
+
+    <!--<resultMap id="userList" type="user" />-->
+
+    <!--<resultMap id="nameList" type="string" />-->
+
+    <select id="selectUser" resultType="user">
+        select * from user where id = #{id}
+    </select>
+    
+    <select id="selectUserByName" resultType="user">
+        select * from user where username like concat('%', #{username}, '%') and id &lt; #{id}
+    </select>
+
+    <select id="selectAllUser" resultType="user">
+        select * from user
+    </select>
+
+    <select id="selectUserName" resultType="string">
+        select username from user
+    </select>
+
+    <select id="selectUserCount" resultType="int">
+        select count(id) from user
+    </select>
+
+    <insert id="insertUser" parameterType="user" useGeneratedKeys="true" keyProperty="id" >
+        insert into user(username, password, sex, age, qq, weichart, email) values (#{username}, #{password}, #{sex}, #{age}, #{qq}, #{weichart}, #{email})
+    </insert>
+
+    <update id="updateUserSex" >
+        update user set sex = '女' where mod(id, 2) = 0
+    </update>
+
+    <delete id="deleteUserById" >
+        delete from user where id = #{id}
+    </delete>
+
+</mapper>

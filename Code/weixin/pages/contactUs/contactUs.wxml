@@ -1,0 +1,18 @@
+<view class='p20'>
+
+    <view class='flex h80 aic row mt30 pl20'>
+        <text class='mr10 color-base'>Q Q:</text>
+        <text class="color-base">452700765</text>
+    </view>
+
+    <view class='flex h80 aic row mt30 pl20'>
+        <text class='mr10 color-base'>QQ群:</text>
+        <text class="color-base">214461008</text>
+    </view>
+
+    <view class='flex h80 aic row mt30 pl20'>
+        <text class='mr10 color-base'>邮箱:</text>
+        <text class="color-base">452700765@qq.com</text>
+    </view>
+
+</view>

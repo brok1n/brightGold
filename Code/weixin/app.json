@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/loading/loading",
+    "pages/home/home",
+    "pages/me/me",
+    "pages/help/help",
+    "pages/feedback/feedback",
+    "pages/devices/devices",
+    "pages/setting/setting",
+    "pages/contactUs/contactUs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "亮金",
+    "navigationBarTextStyle": "light"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "color": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "/images/home_normal.png",
+        "selectedIconPath": "/images/home_selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "/images/me_normal.png",
+        "selectedIconPath": "/images/me_selected.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

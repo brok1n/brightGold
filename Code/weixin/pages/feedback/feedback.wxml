@@ -1,0 +1,8 @@
+<view class='p40'>
+
+  <textarea class='b1 radius10 p10 w650 color-333' placeholder='建议反馈' placeholder-style='feedBackTextarea' bindinput='feedBackInp' maxlength='200'>
+  </textarea>
+
+    <view class='btn btn-base bg-base radius mt100' bindtap='submitBtnTap'>提交</view>
+
+</view>

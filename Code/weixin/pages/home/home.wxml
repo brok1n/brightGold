@@ -1,0 +1,6 @@
+<!--pages/home/home.wxml-->
+
+<view class="mt20">
+    <view class="btn bg-base radius mr50 ml50">添加设备</view>
+</view>
+

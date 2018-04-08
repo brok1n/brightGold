@@ -1,0 +1,32 @@
+<!--pages/me/me.wxml-->
+<view class="container pt100 ">
+
+    <image class="w200 h200 radius100" src="{{userInfo.avatarUrl}}"></image>
+    <text class="mt20">{{userInfo.nickName}}</text>
+
+    <view class="li p30 mt30" ontap="devices">
+        <text class="ml30 h50 lh50 color-333">我的设备</text>
+        <image class="w50 h50 mr30 mlauto" src="/images/right_jt.png"></image>
+    </view>
+
+    <view class="li p30 mt30" ontap="help">
+        <text class="ml30 h50 lh50 color-333">帮助</text>
+        <image class="w50 h50 mr30 mlauto" src="/images/right_jt.png"></image>
+    </view>
+
+    <view class="li p30 mt30" ontap="feedback">
+        <text class="ml30 h50 lh50 color-333">建议反馈</text>
+        <image class="w50 h50 mr30 mlauto" src="/images/right_jt.png"></image>
+    </view>
+
+    <view class="li p30 mt30" ontap="contactUs">
+        <text class="ml30 h50 lh50 color-333">联系我们</text>
+        <image class="w50 h50 mr30 mlauto" src="/images/right_jt.png"></image>
+    </view>
+
+    <!--<view class="li p30 mt30" ontap="setting">-->
+        <!--<text class="ml30 h50 lh50 color-333">设置</text>-->
+        <!--<image class="w50 h50 mr30 mlauto" src="/images/right_jt.png"></image>-->
+    <!--</view>-->
+
+</view>

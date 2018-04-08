@@ -1,0 +1,7 @@
+<!--pages/loading/loading.wxml-->
+<view class="absolute flex ltrb0 bg-base aic">
+    <text class="block wp100 tc color-white fs26">亮金 开创你的未来</text>
+
+    <text class="absolute rt50 color-black block h50 lh50 w50 radius25 bg-white tc">{{time}}</text>
+
+</view>

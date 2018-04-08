@@ -1,0 +1,6 @@
+/* pages/home/home.wxss */
+text{
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
