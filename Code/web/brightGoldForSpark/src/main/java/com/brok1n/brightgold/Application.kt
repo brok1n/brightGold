@@ -17,5 +17,5 @@ fun main( args: Array<String>){
 
 fun init(){
     println("初始化")
-    port(80)
+    port(8888)
 }
