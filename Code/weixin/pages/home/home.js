@@ -15,6 +15,27 @@ Page({
    */
   onLoad: function (options) {
     home = this
+
+    var session = app.getSession()
+    if ( session != null ) {
+        app.api.loginBySession( session, function (data) {
+            app.log(data)
+        }, function (msg) {
+            app.log(msg)
+        })
+    } else {
+      app.api.loginByCode( app.data.loginData.code, function (data) {
+          app.log(data)
+      }, function (msg) {
+          app.log(msg)
+      })
+    }
+
+    app.log("start register")
+    app.api.register(app.data.loginData.code, app.data.userInfo.avatarUrl,app.data.userInfo.city, app.data.userInfo.country, app.data.userInfo.gender, app.data.userInfo.language,app.data.userInfo.nickName, app.data.userInfo.province,function () {
+    }, function () {
+    } )
+
   },
 
   /**

@@ -8,8 +8,8 @@ import spark.Spark.*
 
 class Router {
 
-    val userApi = UserApi()
-    val deviceApi = DeviceApi()
+    private val userApi = UserApi()
+    private val deviceApi = DeviceApi()
 
     fun init(){
 
@@ -20,8 +20,10 @@ class Router {
 
         path("/api", {
             path("/user", {
+                get("/register.go", Route { request, response -> userApi.register(request, response) })
+                post("/register.go", Route { request, response -> userApi.registerPost(request, response) })
                 get("/login.go", Route { request, response -> userApi.login(request, response) })
-                post("/login.go", Route { request, response -> userApi.login(request, response) })
+                post("/login.go", Route { request, response -> userApi.loginPost(request, response) })
             })
             path("/device", {
                 get("/deviceList.go", Route { request, response -> deviceApi.deviceList(request, response ) })

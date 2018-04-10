@@ -30,6 +30,7 @@ dependencies {
     compile "com.sparkjava:spark-core:2.7.2"
     compile 'com.squareup.okhttp3:okhttp:3.10.0'
     compile 'org.mybatis:mybatis:3.4.6'
+    compile 'com.google.code.gson:gson:2.8.2'
 }
 
 compileKotlin {

@@ -35,7 +35,11 @@ Page({
    */
   onShow: function () {
 
-
+      app.api.req("https://api.brok1n.com/api/user/login.go", {}, function (data) {
+          app.log(data)
+      }, function (data) {
+          app.log(data)
+      })
 
   },
 
